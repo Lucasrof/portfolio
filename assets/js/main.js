@@ -1,0 +1,71 @@
+
+
+class MobileNavbar{
+    constructor(mobileMenu, navList, navLinks){
+       this.mobileMenu = document.querySelector(mobileMenu)
+       this.navList = document.querySelector(navList)
+       this.navLinks = document.querySelectorAll(navLinks)
+       this.activeClass = "active"
+
+       this.handleClick = this.handleClick.bind(this)
+    }
+    animateLinks(){
+        this.navLinks.forEach((link, index)=> {
+            link.style.animation ? (link.style.animation = " ") : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4 + 0.2}s`);
+        })
+    }
+    handleClick(){
+        this.navList.classList.toggle(this.activeClass)
+        this.mobileMenu.classList.toggle(this.activeClass)
+        this.animateLinks()
+    }
+
+    addClickEvent(){
+        this.mobileMenu.addEventListener("click", this.handleClick)
+    }
+
+    init(){
+        if(this.mobileMenu){
+            this.addClickEvent()
+        }
+        return this;
+    }
+}
+
+const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+)
+mobileNavbar.init() 
+
+/*--- Atualizando texto ---*/
+
+$(function(){
+	$(".typed").typed({
+		strings: ["Student",
+        "FullStack Jr.",
+        "Tech Lover",
+        "Gamer"],
+		stringsElement: null,
+		typeSpeed: 30,
+		startDelay: 1200,
+		backSpeed: 20,
+		backDelay: 500,
+		loop: true,
+		loopCount: 5,
+		showCursor: false,
+		cursorChar: "|",
+		attr: null,
+		contentType: 'html',
+		callback: function() {},
+		preStringTyped: function() {},
+		onStringTyped: function() {},
+		resetCallback: function() {}
+	});
+});
+
+
+
+
+
