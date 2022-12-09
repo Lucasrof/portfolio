@@ -1,12 +1,11 @@
 
-
 class MobileNavbar{
     constructor(mobileMenu, navList, navLinks){
        this.mobileMenu = document.querySelector(mobileMenu)
        this.navList = document.querySelector(navList)
        this.navLinks = document.querySelectorAll(navLinks)
        this.activeClass = "active"
-
+       
        this.handleClick = this.handleClick.bind(this)
     }
     animateLinks(){
@@ -39,8 +38,17 @@ const mobileNavbar = new MobileNavbar(
 )
 mobileNavbar.init() 
 
-/*--- Atualizando texto ---*/
+/*--- NavActive Close ---*/
+const nav = document.querySelectorAll('.nav-list li')
+const navigation = document.querySelector('.nav-list')
+nav.forEach((element,index)=>{
+    element.addEventListener('click', ()=>{
+    navigation.classList.remove('active')
+})
+})
 
+
+/*--- Atualizando texto ---*/
 $(function(){
 	$(".typed").typed({
 		strings: ["Student",
@@ -53,7 +61,7 @@ $(function(){
 		backSpeed: 20,
 		backDelay: 500,
 		loop: true,
-		loopCount: 5,
+		loopCount: Infinity,
 		showCursor: false,
 		cursorChar: "|",
 		attr: null,

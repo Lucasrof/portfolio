@@ -8,6 +8,7 @@
 
 body{
     background-color: #242424;  
+    background-size: cover;
 }
 
   a {
@@ -34,8 +35,10 @@ body{
     font-family: 'Montserrat';
     background: #141414;
     height: 8vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
   }
-  
   .nav-list {
     list-style: none;
     display: flex;
@@ -45,7 +48,7 @@ body{
   
   .nav-list li {
     letter-spacing: 3px;
-    margin-left: 45px;
+    margin-left: 35px; 
   }
   /*---Menu Hamburguer ---*/
   .mobile-menu {
@@ -66,18 +69,18 @@ body{
       overflow-x: hidden;
     }
     .nav-list {
-      position: absolute;
+      position:fixed;
       top: 8vh;
       right: 0;
       width: 100%;
       height:100%;
-      background: #141414da;
+      background: #d84400; 
       flex-direction: column;
+      text-align: center;
       align-items: center;
       justify-content: space-around;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
-      z-index: 999;
     }
     .nav-list li {
       margin-left: 0;
@@ -87,10 +90,13 @@ body{
       display: block;
     }
   }
-  
   .nav-list.active {
     transform: translateX(0);
   }
+  .hdskills{
+    text-align: center;
+  }
+  
   
   @keyframes navLinkFade {
     from {
@@ -99,23 +105,23 @@ body{
     }
     to {
       opacity: 1;
-      transform: translateX(0);
-    }
+      transform: translateX(0px);
+    }  
   }
   
-  .mobile-menu.active .linha1 {
+  .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
   }
   
-  .mobile-menu.active .linha2 {
+  .mobile-menu.active .line2 {
     opacity: 0;
   }
   
-  .mobile-menu.active .linha3 {
+  .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-  /* --------- Textos -----------*/
+  /* --------- Text -----------*/
   h1,
 h2,
 h3,
@@ -126,6 +132,21 @@ p {
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 110px 0;
+  overflow: hidden;
+}
+.section-title h2::after {
+  content: "";
+;
+  width: 50px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
 
   /*------- Init -----*/
 #init{
@@ -134,13 +155,11 @@ p {
     margin: 0;
  }
 .init-container{
-    position: relative;
-    z-index:2;
     min-width: 300px;
 }
 #init h2{
     color: white;
-    font-size: 40px;
+    font-size: 80px;
     margin-top: -15px;
 }
 #init p{
@@ -149,8 +168,14 @@ p {
     margin-left: 2px;
     margin-top: -10px;
 }
-.nome{
+
+.name{
     color: rgba(245, 100, 42, 0.986);
+}
+.nameupper{
+  color: rgba(245, 100, 42, 0.986);
+  text-transform: uppercase;
+ 
 }
 .typed{
     color: rgba(245, 100, 42, 0.986);
@@ -160,8 +185,103 @@ p {
 .social{
     color: white;
     font-size: 30px;
-}
+  }
 .social:hover{
     color:  rgba(245, 100, 42, 0.986);
     transition: 0.5s ease;
+}
+/*--- ABOUT ME -----*/
+.about {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: rgba(245, 100, 42, 0.986);
+}
+.section-title{
+text-align:center;
+}
+.section-title{
+  font-size: 24px;
+}
+.section-title h1{
+  text-align: center;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+#descript {
+  color:#fff;
+  text-decoration: uppercase;
+}
+
+.about .content ul li {
+  font-size: 16px;
+  margin-right: 5px;
+  color:  rgba(245, 100, 42, 0.986);
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* MY SKILLS */
+.skills{
+  margin-bottom: 370px;
+}
+
+
+.myskills{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hardskills{
+  display: flex;
+  justify-content: center;
+}
+.hdskills{
+  display: flex;
+  justify-content: center; 
+  color:  rgba(245, 100, 42, 0.986);
+  font-size: 38px;
+  border-bottom: #d84400 2px solid;
+}
+.hardicons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4px;
+  font-size: 20px;  
+}
+/* .hdskills{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color:rgba(245, 100, 42, 0.986);
+  font-weight: bold;
+  margin-bottom: 500px;
+  border-bottom: #d84400 2px solid;
+}
+
+.hardskills{
+  display: flex;
+  flex-direction: column;
+} */
+.hardicons{
+  color: #d84400;
 }
