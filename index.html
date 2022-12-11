@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!--CSS SWIPER-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <!---Style CSS-->
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
   <body>
@@ -61,30 +64,101 @@
     <section id="skills" class="skills section-bg">
       <div class="container">
         <div class="section-title">
-          <h2 class="nameupper">Skills</h2>
+          <h2 class="nameupper">Habilidades</h2>
           <p>Durante a minha jornada tive a oportunidade de trabalhar e aprimorar as seguintes <span class="nameupper">habilidades</span>.</p>
         </div>
         <div class="myskills">
             <div class="hardskills">
-              <p class="hdskills">HARDSKILL</p>
+              <p class="hdskills">HardSkill's</p>
             </div> 
             <div class="hardicons">
-              <span class="hardicons"><img src="./assets/img/js.png" alt="" ></span>
-              <span class="hardicons"><img src="./assets/img/react.png" alt=""></span>
-              <span class="hardicons"><img src="./assets/img/css.png" alt=""></span>
-              <span class="hardicons"><img src="./assets/img/html.png" alt=""></span>
-              <span class="hardicons"><img src="./assets/img/php.png" alt="" ></span>
-              <span class="hardicons"><img src="./assets/img/node.png" alt="" ></span>
-              <span class="hardicons"><img src="./assets/img/github.png" alt=""></span>
-              <span class="hardicons"><img src="./assets/img/git.png" alt=""></span> 
+              <p><img src="./assets/img/js.png" alt="" > JavaScript</p>
+              <p><img src="./assets/img/react.png" alt=""> React & ReactNative</p>
+              <p><img src="./assets/img/css.png" alt=""> Css3</p>
+              <p><img src="./assets/img/html.png" alt=""> Html5</p>
+              <p><img src="./assets/img/php.png" alt="" > PHP</p>
+              <p><img src="./assets/img/node.png" alt="" > NodeJS</p>
+              <p><img src="./assets/img/git.png" alt=""> Git</p>
+              <p><img src="./assets/img/github.png" alt="">GitHub</p>      
           </div> 
         </div>
-            <div class="hardskills">
-              <p class="hdskills">SoftSkills</p>
+            <!-- <div class="hardskills">
+              <p class="hdskills">SoftSkill's</p>
             </div>
+            <div>
+             <p class="softkillsp"><span style="color:#d84400; font-style: italic; font-size: 30px;">Comunicação:</span>  Ótima comunicação verbal, escrita, facilidade em informar, interagir, motivar e comandar.</p>
+             <p class="softkillsp"><span style="color:#d84400; font-style: italic; font-size: 30px;">Resolução de Problemas:</span> Análise crítica para as soluções de problemas diário.</p>
+             <p class="softkillsp"><span style="color:#d84400; font-style: italic; font-size: 30px;">Auto Gerenciamento:</span> Facilidade na organização e administração de tarefas diversas, gerenciamento de tempo e execução.</p>
+             <p class="softkillsp"><span style="color:#d84400; font-style: italic; font-size: 30px;">Responsibilização:</span> Ótima adaptação a feedbacks positivos e negativos, boa resiliência e amoldagem a novas ideias e métodos de trabalho.</p>
+            </div> -->
     </div>
     </section> <!-- End Skills Section-->
 
+
+    <!--MyProjects-->
+    <section id="projects" class="projects">
+      <div class="section-title"> 
+        <h2 class="nameupper">PROJETOS</h2>
+        <p>Alguns dos projetos que desenvolvi em busca do aprimoramento de minhas <span class="nameupper">habilidades</span>.</p>
+          <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                      <div class="card swiper-slide">
+                        <div class="image-content">
+                          <span class="overlay"></span>
+
+                          <div class="card-image">
+                              <img src="./assets/img/roulette.jpg" alt="" class="card-img">
+                          </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Cassino</h2>
+                            <p class="description">Linguagens: ReactNative, ExpressJs, MySql.</p>
+
+                            <button class="button">Veja Mais</button>
+                        </div>
+                      </div>
+                      <div class="card swiper-slide">
+                        <div class="image-content">
+                          <span class="overlay"></span>
+
+                          <div class="card-image">
+                              <img src="./assets/img/myport.PNG" alt="" class="card-img">
+                          </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Primeiro Portfólio</h2>
+                            <p class="description">Linguagens: Html5, Css3, JavaScript e PHP.</p>
+
+                            <button class="button">Veja Mais</button>
+                        </div>
+                      </div>
+                      
+                      <div class="card swiper-slide">
+                        <div class="image-content">
+                          <span class="overlay"></span>
+
+                          <div class="card-image">
+                              <img src="./assets/img/flappybird.PNG" alt="" class="card-img">
+                          </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">FlappyBird Game</h2>
+                            <p class="description">Linguagens: Html5, CSS3, JavaScript.</p>
+                            <button class="button">Veja Mais</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>  
+        </div>
+       </div> 
+    </section>
   </main>
 
     <!--Scripts Session-->
@@ -92,6 +166,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+  
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>    
@@ -101,4 +177,36 @@
 
 
 
-        
+<!-- <div class="slider">
+  <div class="slides">
+    <input type="radio" name="radio-btn" id="radio1"> 
+    <input type="radio" name="radio-btn" id="radio2"> 
+    <input type="radio" name="radio-btn" id="radio3"> 
+    <input type="radio" name="radio-btn" id="radio4">
+    <div class="slide first">
+      <img src="./assets/img/roulette.jpg" alt="project1">
+    </div> 
+    <div class="slide">
+      <img src="./assets/img/firstportfolio.PNG" alt="project2">
+    </div> 
+    <div class="slide">
+      <img src="./assets/img/flappybird.PNG" alt="project3">
+    </div>
+    <div class="slide">
+      <img src="./assets/img/imagecalculator.PNG" alt="project4">
+    </div>
+
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div> 
+
+</div> 
+  <div class="manual-navigation">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div> -->
