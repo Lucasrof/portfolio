@@ -103,6 +103,33 @@ body{
     .swiper-pagination{
       margin-bottom: 20px;
     }
+    .contact{
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      margin-bottom: 500px;
+    }
+    .contactarea{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+    }
+    
+    .cttarea input, textarea, label, button{
+      align-items: center;
+      margin-bottom: 100px;
+    }
+    .cttarea h2{
+      margin-right: 100px;
+    }
+    .cttarea p{
+      text-align: center;
+      text-align: center;
+      align-items: center;
+    }
+    
   }
   .nav-list.active {
     transform: translateX(0);
@@ -450,12 +477,121 @@ text-align:center;
   background-color: #d34301f5;
 
 }
+ /* Contact Area */
+ .contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
 
+ .contactarea{
+  align-items: center;
+  justify-content: center;
+  padding: 10px 45px;
+  background: #242424;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.733) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 16px;
+  margin-bottom: 70px;
+}
 
+.cttarea p{
+  text-align: justify;
+  font-size: 12px;
 
+}
+.cttarea{
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+}
+.cttarea h2{
+  color: #d84400;
+  font-size: 2.5rem;
+  margin: 2rem;
+  text-align: center;
+}
 
+.cttarea label{
+  font-size: 17px;
+  margin-bottom: 4px;
+  text-align: left;
+  color: white;
+}
 
+.cttarea input{
+  padding: 10px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+}
 
+.cttarea textarea{
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  border: 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.cttarea button{
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid  #fff;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+
+.cttarea button:hover{
+  background: #fff;
+  color: #000000fb;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+/* Thanks area */
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #242424;
+  flex-direction: column;
+}
+
+.thankstext{
+  font-size: 45px;
+  color: #d84400;
+  margin-bottom: 30px;
+}
+
+.thanksp{
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.btnthanks{
+  padding: 15px 55px;
+  background-color: #d84400;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.btnthanks:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+  color: #fff;
+}
 
 /* .slider{
   margin: 0 auto;
