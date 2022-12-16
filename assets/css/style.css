@@ -444,6 +444,7 @@ text-align:center;
   background: #8d2d00;
 }
 
+
 .swiper-navBtn{
   color: #8d2d00; 
   transition: color 0.3s ease;
@@ -555,7 +556,11 @@ text-align:center;
   transform: scale(1.1);
   transition: all 0.5s;
 }
+.cttarea button:disabled{
+  cursor: not-allowed;
+  background-color: #da6028;
 
+}
 /* Thanks area */
 .main{
   display: flex;
@@ -592,100 +597,6 @@ text-align:center;
   transition: all 0.5s;
   color: #fff;
 }
-
-/* .slider{
-  margin: 0 auto;
-  width: 800px;
-  height: 400px;
-  overflow: hidden;
+.thanksp{
+  text-align: center;
 }
-
-.slides{
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 25;
-  position: relative;
-}
-
-.slide img{
-  width: 800px;
-}
-
-.manual-navigation{
-  position: absolute;
-  width: 800px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn{
-  border: 2px solid white;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1;
-}
-.manual-btn:not(:last-child){
-  margin-right: 40px;
-}
-
-.manual-btn:hover{
- background-color:  #d84400;
-}
-
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-#radio2:checked ~ .first{
-  margin-left: -100%;
-}
-#radio3:checked ~ .first{
-  margin-left: -200%;
-}
-#radio4:checked ~ .first{
-  margin-left: -300%;
-}
-
-.navigation-auto div{
-  border: 2px solid #d84400;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1;
-}
-
-.navigation-auto{
-  position: absolute;
-  width: 800px;
-  margin-top: 360px;
-  display: flex;
-  justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background-color: #d84400;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background-color: #d84400;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background-color: #d84400;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background-color: #d84400;
-} */
